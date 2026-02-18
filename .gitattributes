@@ -1,0 +1,14 @@
+# Note: This attribute is for personal use only. 
+# It does not impact the core functionality and can be safely ignored.
+
+# 1. Ignore heavy frontend configuration and lock files
+frontendpackage-lock.json linguist-generated
+frontendpackage.json linguist-generated
+
+# 2. Ignore the public folder assets
+frontendpublic linguist-vendored
+
+# 3. Ignore images and styles so they don't add to the frontend byte count
+frontendsrcimages linguist-vendored
+.css linguist-vendored
+.svg linguist-vendored

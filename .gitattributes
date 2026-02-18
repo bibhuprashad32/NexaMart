@@ -8,7 +8,11 @@ frontend/package.json linguist-generated
 # 2. Ignore the public folder assets
 frontend/public/** linguist-vendored
 
-# 3. Ignore images and styles so they don't add to the frontend byte count
+# 3. Ignore images and styles 
 frontend/src/images/** linguist-vendored
-.css linguist-vendored
-.svg linguist-vendored
+*.css linguist-vendored
+*.svg linguist-vendored
+
+# 4. SLASH THE JS WEIGHT: Ignore specific component folders to let Java win
+frontend/src/pages/** linguist-vendored
+frontend/src/userComponent/** linguist-vendored
